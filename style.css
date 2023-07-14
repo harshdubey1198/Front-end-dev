@@ -2,9 +2,11 @@
 
 .hero {
   display: grid;
-  background-color: #27292F;
+  background-color: #869ee6;
   grid-template-columns: 80px 1fr 1fr;
   height: 100vh;
+  cursor:url("./arrow.png"),auto;
+
 }
 
 .hero_content {
@@ -16,24 +18,36 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;  cursor:url("./arrow.png"),auto;
+
 }
 
 h1 {
   color: white;
   font-family: 'Inter', sans-serif;
-  font-size: clamp(32px, 6vw, 72px);
+  font-size: clamp(32px, 5vw, 72px);
   line-height: 92%;
+  cursor:url("./arrow.png"),auto;
 }
+h2 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(22px, 6vw, 32px);
+  line-height: 92%;
+  cursor:url("./arrow.png"),auto;
 
+}
 p {
-  color: rgba(255, 255, 255,.5);
+  color: rgba(237, 16, 245, 0.704);
   font-family: sans-serif;
   font-size: clamp(16px, 1.4vw, 24px);
   font-weight: 300;
   line-height: 145%; 
 }
-
+a{
+  color:aliceblue;
+  cursor: url("./arrow.png"),auto;
+}
 svg {
   grid-column: 1/4;
 }
@@ -51,10 +65,10 @@ button {
 }
 
 button:hover {
-  box-shadow: 0px 20px 40px rgba(0,0,0,.5);
-  cursor: pointer;
-}
+  box-shadow: 0px 20px 40px rgba(212, 7, 7, 0.5);
+  cursor: url("./arrow.png"),auto;
 
+}
 
 /* @media only screen and (max-width: 950px) { 
   .hero {
